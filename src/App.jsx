@@ -1,8 +1,11 @@
-import React from "react"
+import React from "react";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
-    <h1 className="text-lg text-red-600 font-semibold">Hello How you</h1>
+    <h1 >
+      <MainPage />
+    </h1>
   )
 }
 
