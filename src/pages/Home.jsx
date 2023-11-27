@@ -1,9 +1,11 @@
-import Headline from "../componenets/Headline";
+import Headline from "../componenets/Header";
+import Navbar from "../componenets/Navbar";
 
 function Home() {
     return(
         <div>
             <Headline />
+            <Navbar />
         </div>
     )
 }

@@ -23,11 +23,11 @@ function Headline() {
       </div>
       {screenWidth ? (
         <div className="flex items-center justify-center gap-7">
-          <p className="flex items-center gap-2 " ><img src={emailIcon} alt="Email Icon" style={{fill: 'red'}} />+93 730 23 23 89</p>
-          <p className="flex items-center gap-2 " ><img src={phoneIcon} alt="Phone Icon" style={{fill: 'red'}} />info@taawon.af</p>
+          <p className="flex items-center gap-2 text-sm" ><img src={emailIcon} alt="Email Icon" style={{fill: 'red'}} />+93 730 23 23 89</p>
+          <p className="flex items-center gap-2 text-sm" ><img src={phoneIcon} alt="Phone Icon" style={{fill: 'red'}} />info@taawon.af</p>
         </div>
       ) : null}
-      <select className="h-7 focus:outline-none">
+      <select className="h-7 focus:outline-none text-sm">
         <option value="english" className="text-[10px]">English</option>
         <option value="Persian" className="text-[10px]">دری</option>
         <option value="Pashto" className="text-[10px]">پشتو</option>
