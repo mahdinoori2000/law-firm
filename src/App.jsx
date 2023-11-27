@@ -1,8 +1,8 @@
-import React from "react"
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <h1 className="text-lg text-red-600 font-semibold">Hello How you</h1>
+    <Home />
   )
 }
 
