@@ -1,6 +1,6 @@
 import Headline from '../headline/Headline'
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import Services from '../services/Services';
 import Testimonials from '../components/Testimonials';
 import ExpertTeam from '../components/Expert';
