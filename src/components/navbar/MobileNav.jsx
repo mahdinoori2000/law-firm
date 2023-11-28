@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { CiRollingSuitcase } from 'react-icons/ci';
 import { FaRegNewspaper, FaSuitcaseRolling } from 'react-icons/fa';
-import { GrDocumentText } from 'react-icons/gr';
 import {
-  AiOutlineClose, AiOutlineHome, AiOutlineLogin, AiOutlineContacts,
+  AiOutlineClose, AiOutlineHome, AiOutlineContacts,
 } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -15,19 +13,15 @@ export default function MobileNav() {
     return (
       <div className="h-[100vh] absolute left-0 top-0 z-10 w-[250px] bg-slate-50 ">
         <div className="bg-blue-500 h-[25vh] flex justify-between px-4 py-4 items-start">
-          
           <button type="button" onClick={() => setOpenNav(false)}>
             <AiOutlineClose style={{ width: '1.2rem', height: '1.2rem', color: '#fff' }} />
           </button>
         </div>
         <ul className="p-4 flex flex-col gap-5">
           <MobileNavItems path="/" icon={<AiOutlineHome />} name="Home" />
-          <MobileNavItems path="/destination" icon={<FaSuitcaseRolling />} name="Destination" onClick={() => setOpenNav(false)} />
-          <MobileNavItems path="/service" icon={<CiRollingSuitcase />} name="Service" />
+          <MobileNavItems path="/about" icon={<FaSuitcaseRolling />} name="Destination" onClick={() => setOpenNav(false)} />
           <MobileNavItems path="/blog" icon={<FaRegNewspaper />} name="Blog" />
-          <MobileNavItems path="/page" icon={<GrDocumentText />} name="Page" />
           <MobileNavItems path="/contact" icon={<AiOutlineContacts />} name="Contact" />
-          <MobileNavItems path="/sign-in" icon={<AiOutlineLogin />} name="Sign-In" />
         </ul>
       </div>
     );
