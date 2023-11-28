@@ -4,7 +4,7 @@ import emailIcon from '../assets/icons/email-icon.svg';
 import phoneIcon from '../assets/icons/phone-icon.svg';
 
 function Header() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth < 786);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth > 786);
 
   useEffect(() => {
     const handleResize = () => {
