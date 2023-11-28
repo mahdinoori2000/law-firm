@@ -5,6 +5,7 @@ import Services from '../services/Services';
 import Testimonials from '../components/Testimonials';
 import ExpertTeam from '../components/Expert';
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 const MainPage = () => {
   return (
@@ -16,6 +17,7 @@ const MainPage = () => {
       <Testimonials />
       <ExpertTeam />
       <ContactForm />
+      <Footer />
     </div>
   )
 }
