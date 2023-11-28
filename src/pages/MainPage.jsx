@@ -2,10 +2,9 @@ import Headline from '../headline/Headline'
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Services from '../services/Services';
-import Header from "../componenets/Header";
-import Navbar from "../componenets/Navbar";
-import ExpertTeam from '../componenets/Expert';
-import ContactForm from '../componenets/ContactForm';
+import Testimonials from '../components/Testimonials';
+import ExpertTeam from '../components/Expert';
+import ContactForm from '../components/ContactForm';
 
 const MainPage = () => {
   return (
@@ -14,6 +13,7 @@ const MainPage = () => {
       <Navbar />
       <Headline />
       <Services />
+      <Testimonials />
       <ExpertTeam />
       <ContactForm />
     </div>

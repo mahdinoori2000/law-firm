@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 import emailIcon from '../assets/icons/email-icon.svg';
 import phoneIcon from '../assets/icons/phone-icon.svg';
 
-function Headline() {
+function Header() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth < 786);
 
   useEffect(() => {
@@ -36,4 +36,4 @@ function Headline() {
   );
 }
 
-export default Headline;
+export default Header;
