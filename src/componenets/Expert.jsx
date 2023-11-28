@@ -2,22 +2,16 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import lawyer from '../assets/lawyer.png';
+import lawyer2 from '../assets/lawyer2.jpg';
+import lawyer3 from '../assets/lawyer3.jpg';
 
 function ExpertTeam() {
   const teamMembers = [
     { name: 'Mohsen', position: 'Senior Lawyer', image: lawyer },
-    { name: 'Jane', position: 'Legal Consultant', image: lawyer },
-    { name: 'John', position: 'Attorney', image: lawyer },
-    // Add more team members as needed
+    { name: 'Jane', position: 'Legal Consultant', image: lawyer2 },
+    { name: 'John', position: 'Attorney', image: lawyer3 },
+   
   ];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
 
   return (
     <section className="my-20">
