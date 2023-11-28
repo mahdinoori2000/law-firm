@@ -21,7 +21,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="flex justify-left ml-[1rem] md:items-center md:justify-around md:bg-custom-primary-blue">
+    <div className="flex justify-left md:items-center md:justify-around md:bg-[#082f49]">
       {mobileNav ? (
         <img src={menuIcon} alt="Humbarger Logo" className="w-[1.4rem]" onClick={toggleMobileMenu}/>
       ) : (
