@@ -10,7 +10,7 @@ export default {
       colors: {
         "custom-primary-blue": "#1e40af",
         "custom-secondary-blue": "#06b6d4",
-
+        "custom-thirtuary-blue": "#082f49",
         "custom-primary-yellow": "#F39200", 
         
         "custom-secondary": "#c27500"
