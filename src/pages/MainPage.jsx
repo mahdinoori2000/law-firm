@@ -1,6 +1,7 @@
 import Headline from '../headline/Headline'
 import Header from "../componenets/Header";
 import Navbar from "../componenets/Navbar";
+import ExpertTeam from '../componenets/Expert';
 
 const MainPage = () => {
   return (
@@ -8,6 +9,7 @@ const MainPage = () => {
       <Header />
       <Navbar />
       <Headline />
+      <ExpertTeam />
     </div>
   )
 }
