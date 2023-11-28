@@ -28,9 +28,9 @@ function Header() {
         </div>
       ) : null}
       <select className="h-7 focus:outline-none text-sm">
-        <option value="english" className="text-[10px]">English</option>
-        <option value="Persian" className="text-[10px]">دری</option>
-        <option value="Pashto" className="text-[10px]">پشتو</option>
+        <option value="english" className="text-[14px]">En</option>
+        <option value="Persian" className="text-[14px]">Fa</option>
+        <option value="Pashto" className="text-[14px]">Pa</option>
       </select>
     </section>
   );
