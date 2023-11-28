@@ -1,6 +1,7 @@
 import Headline from '../headline/Headline'
-import Header from "../componenets/Header";
-import Navbar from "../componenets/Navbar";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Services from '../services/Services';
 
 const MainPage = () => {
   return (
@@ -8,8 +9,9 @@ const MainPage = () => {
       <Header />
       <Navbar />
       <Headline />
+      <Services />
     </div>
   )
 }
 
-export default MainPage
+export default MainPage;
