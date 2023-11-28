@@ -5,6 +5,7 @@ import Services from '../services/Services';
 import Header from "../componenets/Header";
 import Navbar from "../componenets/Navbar";
 import ExpertTeam from '../componenets/Expert';
+import ContactForm from '../componenets/ContactForm';
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
       <Headline />
       <Services />
       <ExpertTeam />
+      <ContactForm />
     </div>
   )
 }
