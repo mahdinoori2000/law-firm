@@ -52,7 +52,7 @@ function ContactForm() {
           <img
             src={judgement}
             alt="Judgement Picture"
-            className="w-full md:w-[50%] h-auto"
+            className="w-full md:w-[50%] h-auto self-start"
           />
         </div>
       </section>
