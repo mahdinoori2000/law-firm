@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const testimonials = [
@@ -26,14 +26,12 @@ const Testimonials = () => {
     const handleClick = (index) => {
         setCurrentIndex(index);
     };
-
-
     return (
         <>
           <h2 className="text-center mb-8 mt-20 text-xl md:text-3xl"><span>Testimonials</span></h2>
           {testimonials.length && (
             <>
-              <div className="flex w-[60vw] mx-auto shadow-md bg-[#082f49] shadow-lg rounded-lg">
+              <div className="flex w-[60vw] mx-auto shadow-md bg-custom-primary-blue rounded-lg">
                 <div className="flex flex-col justify-between items-start flex-1 p-8 rounded-lg transition-all duration-300 ease-in-out">
                   <p className="text-base md:text-lg lg:text-2xl leading-6 md:leading-8 lg:leading-14 text-white font-base mb-8 md:mb-0 lg:mb-2">
                     {testimonials[currentIndex].feedback}
