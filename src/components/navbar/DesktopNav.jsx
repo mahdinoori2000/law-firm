@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom";
 function DesktopNav() {
   return (
-    <div className="flex justify-left md:items-center md:justify-around md:bg-[#082f49]">
-
+    <div className="flex justify-left md:items-center md:justify-around md:bg-[#082f49] fixed top-15 right-4 w-full">
           <div></div>
           <ul className="text-white h-[10vh] flex items-center justify-center gap-12">
             <NavLink to="/" className="cursor-pointer hover:text-custom-primary-yellow">Home</NavLink>

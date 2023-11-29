@@ -18,7 +18,7 @@ function Header() {
   }, []); 
   return (
     screenWidth && (
-      <section className="px-5 h-[10vh] flex justify-around items-center">
+      <section className="px-5 h-[10vh] flex justify-around items-center fixed top-0 right-4 w-full bg-white">
         <div className="w-20">
           <img src={logo} alt="Logo" />
         </div>
