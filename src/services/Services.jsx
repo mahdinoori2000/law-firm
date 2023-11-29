@@ -1,4 +1,3 @@
-import React from 'react';
 import { services } from '../constants/services';
 import ServiceCard from '../components/ServiceCard';
 
