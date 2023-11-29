@@ -15,42 +15,46 @@ export default function MobileNav() {
   return (
     <div className="relative mb-14 bg-white">
       <div className="fixed top-0 left-0 z-50 h-[10vh] w-full bg-white">
-              <button
-                type="button"
-                onClick={() => setOpenNav(!openNav)}
-                className="fixed left-4 top-5 z-500"
-              >
-                {openNav ? (
-                  <AiOutlineClose style={{ width: '2rem', height: '2rem' }} />
-                  ) : (
-                  <GiHamburgerMenu style={{ width: '2rem', height: '2rem' }} />
-                )}
-              </button>
-              {!openNav && (
-                <div className="fixed top-0 right-4 transition-transform ease-in-out duration-500">
-                  <div className="w-20">
-                    <img src={logo} alt="Logo" />
-                  </div>
-                </div>
-              )}
+        <button
+          type="button"
+          onClick={() => setOpenNav(!openNav)}
+          className="fixed left-4 top-5 z-500 bg-slate-50"
+        >
+          {openNav ? (
+            <AiOutlineClose style={{ width: '2rem', height: '2rem' }} />
+          ) : (
+            <GiHamburgerMenu style={{ width: '2rem', height: '2rem' }} />
+          )}
+        </button>
+        {!openNav && (
+          <div className="fixed top-0 right-4 transition-transform ease-in-out duration-500">
+            <div className="w-20">
+              <img src={logo} alt="Logo" />
             </div>
+          </div>
+        )}
+      </div>
+
+      <select
+        className={`fixed right-8 top-6 z-${openNav ? '50' : '-1'} h-7 focus:outline-none text-[18px] cursor-pointer bg-slate-50`}
+        style={{ display: openNav ? 'block' : 'none' }}
+      >
+        <option value="english" className="text-[14px]">
+          En
+        </option>
+        <option value="Persian" className="text-[14px]">
+          Fa
+        </option>
+        <option value="Pashto" className="text-[14px]">
+          Pa
+        </option>
+      </select>
 
       <div
         className={`${
           openNav ? 'translate-x-0' : '-translate-x-full'
         } fixed top-0 left-0 z-40 w-[100%] h-screen bg-slate-50 transition-transform ease-in-out duration-500`}
       >
-       <select className="fixed right-8 top-6 z-50 h-7 focus:outline-none text-[18px] cursor-pointer">
-          <option value="english" className="text-[14px]">
-            En
-          </option>
-          <option value="Persian" className="text-[14px]">
-            Fa
-          </option>
-          <option value="Pashto" className="text-[14px]">
-            Pa
-          </option>
-        </select>  
         <ul className="h-full flex flex-col items-center justify-center gap-5">
           <MobileNavItems path="/" name="Home" onClick={handleItemClick} />
           <MobileNavItems path="/about" name="About" onClick={handleItemClick} />
