@@ -1,13 +1,13 @@
-import SubImage from '../assets/heahline-second-image.jpg'
-
+import judgePic from '../assets/judgment-and-lawyer.png'
 const SubHeadline = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center mt-10 md:mt-20 gap-10 md:gap-20 bg-custom-primary-blue py-10'>
+    <div className='flex flex-col md:flex-row justify-center items-center mt-10 md:mt-20 gap-3 md:gap-10 lg:gap-20 bg-custom-primary-blue py-10'>
         <div className='w-[90%] md:w-[300px]'>
-            <h3 className='text-lg text-gray-200 font-semibold mb-4'>Guiding Your Path to Prosperity with Insightful Legal Consular Expertise</h3>
-            <p className='text-gray-300 text-base'>At Taawon Legal Consular, we offer more than just services – we provide expert guidance tailored to your success. Navigate complexities, draft impactful contracts, and thrive with our dedicated support</p>
+            <h3 className='text-lg text-gray-200 font-semibold mb-4'>Navigating Prosperity Through Expert Legal Guidance</h3>
+            <p className='text-gray-300 text-base mb-4'>At Taawon Legal Consular, our commitment goes beyond services — we offer expert guidance tailored to ensure your success. Navigate legal complexities with confidence, benefit from impactful contract drafting, and thrive with our unwavering support. Your path to prosperity starts with our insightful legal counsel.</p>
+            <button type='button' className='bg-custom-primary-yellow text-white px-4 py-2 mt-2 self-start flex items-center gap-4'>Discover Our Approach</button>
         </div>
-        <img src={SubImage} alt="Sub headline image" className='h-[200px] w-auto md:w-auto' />
+        <img src={judgePic} alt="Sub headline image" className='max-md:hidden px-3 lg:px-2 h-[250px] w-auto md:w-auto' />
     </div>
   )
 }
