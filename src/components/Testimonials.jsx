@@ -29,7 +29,7 @@ const Testimonials = () => {
     };
     return (
         <>
-          <h2 className="text-center mb-8 mt-20 text-xl md:text-3xl"><span>Clients Feedback</span></h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 my-6 md:my-10"><span>Clients Feedback</span></h2>
           {testimonials.length && (
             <section className='px-10 md:px-28 lg:px-40'>
               <div className="flex mx-auto shadow-md bg-custom-primary-blue rounded-lg">
