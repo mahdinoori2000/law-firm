@@ -4,7 +4,7 @@ import headlineImage from '../assets/headline-img.jpg';
 const Headline = () => {
   return (
     <div>
-      <div className='h-full flex flex-col mx-auto justify-center w-[90%] items-center md:flex-row md:mt-[10vh]'>
+      <div className='h-full flex mb-16 flex-col mx-auto justify-center w-[90%] items-center md:flex-row md:mb-40 md:mt-[10vh]'>
         <div className='m-auto flex mt-20 gap-4 items-center'>
 
         <div className='flex flex-col justify-center items-start md:w-[500px] mx-auto mt-10'>

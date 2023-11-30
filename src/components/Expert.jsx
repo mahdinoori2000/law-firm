@@ -13,7 +13,7 @@ function ExpertTeam() {
   ];
 
   return (
-    <section className="my-20">
+    <section className="my-32">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 my-6 md:my-10">Our Expert Team</h2>
       <div className="flex flex-wrap justify-center gap-4">
         {teamMembers.map((member, index) => (

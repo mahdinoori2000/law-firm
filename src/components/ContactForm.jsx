@@ -37,7 +37,7 @@ function ContactForm() {
               </div>
             </div>
             <textarea
-              className="border border-gray-300 p-2 w-full h-32 mb-4 md:h-[150px]"
+                          className="border resize-none border-gray-300 p-2 w-full h-32 mb-4 md:h-[150px]"
               placeholder="Write your message..."
               name="user_message"
             ></textarea>
