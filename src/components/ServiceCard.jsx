@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const ServiceCard = ({ title, description, icon }) => {
   return (
     <section className="px-5 mb-8 md:mb-20">
@@ -10,6 +12,12 @@ const ServiceCard = ({ title, description, icon }) => {
       </div>
     </section>
   );
+};
+
+ServiceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default ServiceCard;

@@ -9,13 +9,9 @@ export default {
     extend: {
       colors: {
         "custom-primary-blue": "#001F3F",
-        "custom-secondary-brown": "#603434",
-        "custom-secondary-blue": "#06b6d4",
-        "custom-thirtuary-blue": "#082f49",
+        "custom-secondary-blue": "#001932",
         "custom-primary-yellow": "#c8831a", 
         "custom-secondary-yellow": "#c27500",
-        "custom-secondary": "#c27500"
-
       },
     },
   },

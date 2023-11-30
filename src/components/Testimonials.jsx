@@ -49,11 +49,11 @@ const Testimonials = () => {
               </div>
     
               <div className="flex justify-center gap-3 items-center mt-4">
-                <div className="group shadow-md hover:bg-[#082f49] rounded-full p-2 transition-transform ease-in duration-75 transform-gpu hover:scale-105" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
+                <div className="group shadow-md hover:bg-custom-primary-blue hover:cursor-pointer hover:text-white rounded-full p-2 transition-transform ease-in duration-75 transform-gpu hover:scale-105" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
                     <HiChevronLeft size={30} />
                 </div>
 
-                <div className="group shadow-md hover:bg-[#082f49] rounded-full p-2 transition-transform ease-in duration-75 transform-gpu hover:scale-105" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
+                <div className="group shadow-md hover:bg-custom-primary-blue hover:cursor-pointer hover:text-white rounded-full p-2 transition-transform ease-in duration-75 transform-gpu hover:scale-105" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
                     <HiChevronRight size={30} />
                 </div>
               </div>
