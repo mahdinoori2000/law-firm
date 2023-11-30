@@ -37,14 +37,14 @@ function ContactForm() {
               </div>
             </div>
             <textarea
-              className="border border-gray-300 p-2 w-full h-32 mb-4 md:h-[150px]"
+                          className="border resize-none border-gray-300 p-2 w-full h-32 mb-4 md:h-[150px]"
               placeholder="Write your message..."
               name="user_message"
             ></textarea>
             <button
               type="submit"
               value="send"
-              className="px-4 py-2 bg-custom-primary-yellow hover:bg-yellow-700 mb-3"
+              className="text-white px-4 py-2 bg-custom-primary-yellow hover:bg-custom-secondary-yellow mb-3"
             >
               Send Message
             </button>

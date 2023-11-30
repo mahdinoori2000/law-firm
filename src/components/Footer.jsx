@@ -1,11 +1,11 @@
 import logo from '../assets/taawon.png';
-import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt,FaArrowRight } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaPhoneAlt,FaArrowRight } from "react-icons/fa";
+import { FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-custom-thirtuary-blue text-white py-5">
+    <footer className="bg-custom-primary-blue text-white py-5">
       <div className="container mx-auto grid justify-items-start px-4 grid-cols-1 md:grid-cols-4 gap-4">
         {/* Column 1: Logo and Social Media */}
         <div className="col-span-1 md:col-span-1 justify-items-start items-center">
@@ -16,7 +16,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a href="#" target="_blank">
-              <FaTwitter />
+              <FaSquareXTwitter />
             </a>
             <a href="#" target="_blank">
               <FaLinkedin />
@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="col-span-1 md:col-span-1 justify-items-start items-center">
           <h3 className="font-serif text-lg mb-4">Stay Updated</h3>
           <input className="bg-transparent border border-t-1 border-r-1 border-b-1 border-l-1 px-2 py-1 border-white focus:outline-none mb-2" type="text" placeholder="Enter Email Address" />
-            <button type="submit " className="w-full text-sm px-4 py-2 bg-custom-primary-yellow hover:bg-yellow-700 mb-3 flex items-center gap-2 justify-center"><span>Subscribe Now</span> <FaArrowRight /></button>
+            <button type="submit " className="w-full text-sm px-4 py-2 bg-custom-primary-yellow hover:bg-custom-secondary-yellow mb-3 flex items-center gap-2 justify-center"><span>Subscribe Now</span> <FaArrowRight /></button>
         </div>
       </div>
       <div>
