@@ -14,16 +14,16 @@ export default function MobileNav() {
 
   return (
     <div className="relative mb-14 bg-white">
-      <div className="fixed top-0 left-0 z-50 h-[10vh] w-full bg-white">
+      <div className={`fixed top-0 left-0 z-50 h-[10vh] w-full bg-${openNav ? 'custom-primary-blue' : 'white'}`}>
         <button
           type="button"
           onClick={() => setOpenNav(!openNav)}
-          className="fixed left-4 top-5 z-500 bg-custom-primary-blue text-white"
+          className="fixed left-4 top-5 z-500"
         >
           {openNav ? (
-            <AiOutlineClose style={{ width: '2rem', height: '2rem' }} />
+            <AiOutlineClose style={{ width: '2rem', height: '2rem', color: 'white' }} />
           ) : (
-            <GiHamburgerMenu style={{ width: '2rem', height: '2rem',backgroundColor:'white' }} />
+            <GiHamburgerMenu style={{ width: '2rem', height: '2rem'}} />
           )}
         </button>
         {!openNav && (
@@ -36,7 +36,7 @@ export default function MobileNav() {
       </div>
 
       <select
-        className={`fixed right-8 top-6 z-${openNav ? '50' : '-1'} h-7 focus:outline-none text-[18px] cursor-pointer bg-slate-50`}
+        className={`fixed right-8 top-6 z-${openNav ? '50' : '-1'} h-7 focus:outline-none text-[18px] text-white cursor-pointer bg-custom-primary-blue`}
         style={{ display: openNav ? 'block' : 'none' }}
       >
         <option value="english" className="text-[14px]">

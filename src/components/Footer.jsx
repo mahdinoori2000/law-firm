@@ -1,6 +1,6 @@
 import logo from '../assets/taawon.png';
-import { FaFacebook, FaTwitter, FaLinkedin, FaPhoneAlt,FaArrowRight } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaPhoneAlt,FaArrowRight } from "react-icons/fa";
+import { FaLocationDot,FaSquareXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a href="#" target="_blank">
-              <FaTwitter />
+              <FaSquareXTwitter />
             </a>
             <a href="#" target="_blank">
               <FaLinkedin />
