@@ -1,9 +1,11 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import judgement from '../assets/judgement.jpg';
+import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
   const form = useRef();
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -11,17 +13,17 @@ function ContactForm() {
     emailjs.sendForm('service_vqv52hr', 'template_arw5fqn', form.current, 'YKPZN0HXcnyT7qVcw')
       .then((result) => {
         console.log(result.text);
-         alert('Your message has been sent successfully!');
-         form.current.reset();
+        alert(t('contactForm.successMessage'));
+        form.current.reset();
       }, (error) => {
         console.log(error.text);
-        alert('An error occurred. Please try again later.');
+        alert(t('contactForm.errorMessage'));
       });
   };
 
   return (
     <section>
-      <h2 className="mb-7 text-3xl font-bold text-center">Free Consultation</h2>
+      <h2 className="mb-7 text-3xl font-bold text-center">{t('contactForm.title')}</h2>
       <div className="px-4 flex flex-col gap-4 md:flex-row md:items-center mb-20">
         <form ref={form} onSubmit={sendEmail} className="w-full md:w-[50%]">
           <div className="flex flex-col gap-3 mb-3 sm:flex-row sm:w-full">
@@ -29,13 +31,13 @@ function ContactForm() {
               <input
                 className="border border-gray-300 p-2 rounded"
                 type="text"
-                placeholder="Your Name"
+                placeholder={t('contactForm.namePlaceholder')}
                 name="from_name"
               />
               <input
                 className="border border-gray-300 p-2 rounded"
                 type="number"
-                placeholder="Phone Number"
+                placeholder={t('contactForm.phonePlaceholder')}
                 name="user_number"
               />
             </div>
@@ -43,20 +45,20 @@ function ContactForm() {
               <input
                 className="border border-gray-300 p-2 rounded"
                 type="text"
-                placeholder="Your Email"
+                placeholder={t('contactForm.emailPlaceholder')}
                 name="from_email"
               />
               <input
                 className="border border-gray-300 p-2 rounded"
                 type="text"
-                placeholder="Subject"
+                placeholder={t('contactForm.subjectPlaceholder')}
                 name="user_subject"
               />
             </div>
           </div>
           <textarea
             className="border resize-none border-gray-300 p-2 w-full h-32 mb-4 md:h-[150px]"
-            placeholder="Write your message..."
+            placeholder={t('contactForm.messagePlaceholder')}
             name="message"
           ></textarea>
           <button
@@ -64,7 +66,7 @@ function ContactForm() {
             value="send"
             className="text-white px-4 py-2 bg-custom-primary-yellow hover:bg-custom-secondary-yellow mb-3"
           >
-            Send Message
+            {t('contactForm.sendButton')}
           </button>
         </form>
         <img
