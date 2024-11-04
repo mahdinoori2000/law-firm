@@ -1,0 +1,56 @@
+ {
+      "home": "Home",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact",
+      "freeCaseEvaluation": "Free Case Evaluation",
+    
+      "headline.title": "Elevating Your Success with Strategic Legal Excellence",
+      "headline.description": "Unlock tailored legal expertise at Cooperative Legal Services. From expert case management to precise contract drafting, our commitment is your success. Join us on your legal journey with a focus on quality and collaboration.",
+      "headline.buttonText": "Consult Our Experts",
+
+      "footer.logoTitle": "Taawon",
+      "footer.navigationLinkTitle": "Navigation Link",
+      "footer.aboutUs": "About Us",
+      "footer.practiceArea": "Practice Area",
+      "footer.faqs": "FAQs",
+      "footer.blog": "Blog",
+      "footer.contactUs": "Contact Us",
+      "footer.contactInfoTitle": "Contact Info",
+      "footer.location": "4th district 4th street of project taimani Kabul, Afghanistan",
+      "footer.stayUpdatedTitle": "Stay Updated",
+      "footer.enterEmailPlaceholder": "Enter Email Address",
+      "footer.subscribeNow": "Subscribe Now",
+      "footer.copyRight": "Copy right allowed 2023",
+
+      "contactForm.title": "Free Consultation",
+      "contactForm.namePlaceholder": "Your Name",
+      "contactForm.phonePlaceholder": "Phone Number",
+      "contactForm.emailPlaceholder": "Your Email",
+      "contactForm.subjectPlaceholder": "Subject",
+      "contactForm.messagePlaceholder": "Write your message...",
+      "contactForm.sendButton": "Send Message",
+      "contactForm.successMessage": "Your message has been sent successfully!",
+      "contactForm.errorMessage": "An error occurred. Please try again later.",
+
+        "subHeadline.title": "Navigating Prosperity Through Expert Legal Guidance",
+        "subHeadline.description": "At Taawon Legal Consular, our commitment goes beyond services — we offer expert guidance tailored to ensure your success. Navigate legal complexities with confidence, benefit from impactful contract drafting, and thrive with our unwavering support. Your path to prosperity starts with our insightful legal counsel.",
+        "subHeadline.buttonText": "Discover Our Approach",
+
+        "services.title": "Services",
+        "services.legalAdvocacy.title": "Legal Advocacy",
+        "services.legalAdvocacy.description": "Expert representation in diverse law cases, including commercial, civil, criminal, and family matters.",
+        "services.contractPrecision.title": "Contract Precision",
+        "services.contractPrecision.description": "Crafting clear and compliant contracts for global businesses, ensuring strong foundations.",
+        "services.governanceEmpowerment.title": "Governance Empowerment",
+        "services.governanceEmpowerment.description": "Specialized drafting of association and union frameworks for effective governance.",
+        "services.strategicPlanning.title": "Strategic Planning & Policy",
+        "services.strategicPlanning.description": "Developing strategies and policies for resilience, growth, and compliance.",
+        "services.strategicBusiness.title": "Strategic Business Planning",
+        "services.strategicBusiness.description": "Formulating detailed business plans as actionable roadmaps for success.",
+        "services.compellingProposal.title": "Compelling Proposals",
+        "services.compellingProposal.description": "Expert writing to captivate and unlock opportunities for partnerships, funding, and progress."
+      }
+    
+  
+  

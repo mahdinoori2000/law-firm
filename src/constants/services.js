@@ -1,39 +1,45 @@
-import legalAdvocacy from '../assets/legal-advocacy.svg';
-import contractPrecision from '../assets/contract-precision.svg';
-import governanceEmpowerment from '../assets/governance-empowerment.svg';
-import strategicPlanning from '../assets/strategic-planning.svg';
-import strategicBusiness from '../assets/strategic-business.svg';
-import compellingProposal from '../assets/compelling-proposal.svg';
+import legalAdvocacyIcon from '../assets/legal-advocacy.svg';
+import contractPrecisionIcon from '../assets/contract-precision.svg';
+import governanceEmpowermentIcon from '../assets/governance-empowerment.svg';
+import strategicPlanningIcon from '../assets/strategic-planning.svg';
+import strategicBusinessIcon from '../assets/strategic-business.svg';
+import compellingProposalIcon from '../assets/compelling-proposal.svg';
 
 export const services = [
     {
-        title: 'Legal Advocacy',
-        description: 'Expert representation in diverse law cases, including commercial, civil, criminal, and family matters.',
-        icon: legalAdvocacy
+        key: 'legalAdvocacy',
+        title: 'services.legalAdvocacy.title',
+        description: 'services.legalAdvocacy.description',
+        icon: legalAdvocacyIcon
     },
     {
-        title: 'Contract Precision',
-        description: 'Crafting clear and compliant contracts for global businesses, ensuring strong foundations.',
-        icon: contractPrecision
+        key: 'contractPrecision',
+        title: 'services.contractPrecision.title',
+        description: 'services.contractPrecision.description',
+        icon: contractPrecisionIcon
     },
     {
-        title: 'Governance Empowerment',
-        description: 'Specialized drafting of association and union frameworks for effective governance.',
-        icon: governanceEmpowerment
+        key: 'governanceEmpowerment',
+        title: 'services.governanceEmpowerment.title',
+        description: 'services.governanceEmpowerment.description',
+        icon: governanceEmpowermentIcon
     },
     {
-        title: 'Strategic Planning & Policy',
-        description: 'Developing strategies and policies for resilience, growth, and compliance.',
-        icon: strategicPlanning
+        key: 'strategicPlanning',
+        title: 'services.strategicPlanning.title',
+        description: 'services.strategicPlanning.description',
+        icon: strategicPlanningIcon
     },
     {
-        title: 'Strategic Business Planning',
-        description: 'Formulating detailed business plans as actionable roadmaps for success.',
-        icon: strategicBusiness
+        key: 'strategicBusiness',
+        title: 'services.strategicBusiness.title',
+        description: 'services.strategicBusiness.description',
+        icon: strategicBusinessIcon
     },
     {
-        title: 'Compelling Proposals',
-        description: 'Expert writing to captivate and unlock opportunities for partnerships, funding, and progress.',
-        icon: compellingProposal
+        key: 'compellingProposal',
+        title: 'services.compellingProposal.title',
+        description: 'services.compellingProposal.description',
+        icon: compellingProposalIcon
     },
 ];

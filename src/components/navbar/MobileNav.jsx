@@ -4,8 +4,10 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import logo from '../../assets/taawon.png';
+import { useTranslation } from 'react-i18next';
 
 export default function MobileNav() {
+  const { t, i18n } = useTranslation();
   const [openNav, setOpenNav] = useState(false);
 
   const handleItemClick = () => {
@@ -23,7 +25,7 @@ export default function MobileNav() {
           {openNav ? (
             <AiOutlineClose style={{ width: '2rem', height: '2rem', color: 'white' }} />
           ) : (
-            <GiHamburgerMenu style={{ width: '2rem', height: '2rem'}} />
+            <GiHamburgerMenu style={{ width: '2rem', height: '2rem' }} />
           )}
         </button>
         {!openNav && (
@@ -38,15 +40,17 @@ export default function MobileNav() {
       <select
         className={`fixed right-8 top-6 z-${openNav ? '50' : '-1'} h-7 focus:outline-none text-[18px] text-white cursor-pointer bg-custom-primary-blue`}
         style={{ display: openNav ? 'block' : 'none' }}
+        onChange={(e) => i18n.changeLanguage(e.target.value)}
+        value={i18n.language}
       >
-        <option value="english" className="text-[14px]">
-          En
+        <option value="en" className="text-[14px]">
+          {t('english')}
         </option>
-        <option value="Persian" className="text-[14px]">
-          Fa
+        <option value="fa" className="text-[14px]">
+          {t('persian')}
         </option>
-        <option value="Pashto" className="text-[14px]">
-          Pa
+        <option value="pa" className="text-[14px]">
+          {t('pashto')}
         </option>
       </select>
 
@@ -56,10 +60,10 @@ export default function MobileNav() {
         } fixed top-0 left-0 z-40 w-[100%] h-screen bg-custom-primary-blue text-white transition-transform ease-in-out duration-500`}
       >
         <ul className="h-full flex flex-col items-center justify-center gap-5">
-          <MobileNavItems path="/" name="Home" onClick={handleItemClick} />
-          <MobileNavItems path="/about" name="About" onClick={handleItemClick} />
-          <MobileNavItems path="/blog" name="Blog" onClick={handleItemClick} />
-          <MobileNavItems path="/contact" name="Contact" onClick={handleItemClick} />
+          <MobileNavItems path="/" name={t('home')} onClick={handleItemClick} />
+          <MobileNavItems path="/about" name={t('about')} onClick={handleItemClick} />
+          <MobileNavItems path="/blog" name={t('blog')} onClick={handleItemClick} />
+          <MobileNavItems path="/contact" name={t('contact')} onClick={handleItemClick} />
         </ul>
       </div>
     </div>
