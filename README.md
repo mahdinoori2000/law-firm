@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
   
   <img src="src/assets/taawon-page.png" alt="logo" width="auto"  height="auto" />
@@ -38,9 +37,7 @@
 
 # 📖 Taawon Law Firm <a name="about-project"></a>
 
-
-
-**Taawon Law Firm** is a legal services project, likely a website or application, designed to provide legal information and assistance. Its focus is on supporting clients with professional legal services and resources.
+**Taawon Legal** is a legal services project, likely a website or application, designed to provide legal information and assistance. Its focus is on supporting clients with professional legal services and resources.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,7 +68,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-
 - **Able to book appointment**
 - **Navbar**
 - **Responsive design**
@@ -81,7 +77,6 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
 
 - [Live Demo Link](https://law-firm-u7jc.vercel.app/)
 
@@ -111,7 +106,6 @@ Clone this repository to your desired folder:
   git clone https://github.com/mahdinoori2000/law-firm.git
 ```
 
-
 ### Install
 
 Install this project with:
@@ -121,7 +115,6 @@ Install this project with:
   npm install
 ```
 
-
 ### Usage
 
 To run the project, execute the following command:
@@ -130,16 +123,13 @@ To run the project, execute the following command:
   npm run dev
 ```
 
-
 ### Run tests
 
 To run tests, run the following command:
 
-
 ```sh
   npm run test
 ```
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,12 +179,10 @@ If you like this project please add ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

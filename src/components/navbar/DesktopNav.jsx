@@ -15,7 +15,6 @@ function DesktopNav() {
           {t('home')}
         </NavLink>
         <NavLink to="/about" className="cursor-pointer hover:text-custom-primary-yellow">
-          {t('about')}
         </NavLink>
         <NavLink to="/blog" className="cursor-pointer hover:text-custom-primary-yellow">
           {t('blog')}
