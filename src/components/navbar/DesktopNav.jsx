@@ -86,7 +86,7 @@ function DesktopNav() {
                 <NavBtn to="/" title="expertise" />
               </li>
               <li>
-                <NavBtn to="/" title="ask a lawyer" />
+                <NavBtn to="/ask-a-lawyer" title="ask a lawyer" />
               </li>
               <li>
                 <NavBtn to="/" title="jobs" />
