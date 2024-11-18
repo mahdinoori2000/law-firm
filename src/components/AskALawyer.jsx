@@ -1,9 +1,9 @@
-import Form from "./ask-a-lawyer/Form";
+import AskALawyerPage from "./ask-a-lawyer/AskALawyerPage";
 
 function AskALawyer() {
   return (
     <div>
-      <Form />
+      <AskALawyerPage />
     </div>
   );
 }
