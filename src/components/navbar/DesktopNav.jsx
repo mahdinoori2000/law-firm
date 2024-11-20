@@ -77,25 +77,22 @@ function DesktopNav() {
                 <NavBtn to="/" title="home" />
               </li>
               <li>
-                <NavBtn to="/" title="about us" />
+                <NavBtn to="/about" title="about us" />
               </li>
               <li>
-                <NavBtn to="/" title="legal services" />
+                <NavBtn to="/legalServices" title="legal services" />
               </li>
               <li>
-                <NavBtn to="/" title="expertise" />
+                <NavBtn to="/expertise" title="expertise" />
               </li>
               <li>
                 <NavBtn to="/ask-a-lawyer" title="ask a lawyer" />
               </li>
               <li>
-                <NavBtn to="/" title="jobs" />
+                <NavBtn to="/multiMedia" title="multimedia" />
               </li>
               <li>
-                <NavBtn to="/" title="multimedia" />
-              </li>
-              <li>
-                <NavBtn to="/" title="contact us" />
+                <NavBtn to="/contact" title="contact us" />
               </li>
             </ul>
           </div>

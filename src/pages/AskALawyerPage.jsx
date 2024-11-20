@@ -1,6 +1,9 @@
-import lawyers from "../../assets/lawyers.png";
-import HowItWorks from "./HowItWorks";
-import WhyTaawon from "./WhyTaawon";
+import lawyers from "../assets/lawyers.png";
+import HowItWorks from "../components/ask-a-lawyer/HowItWorks";
+import WhyTaawon from "../components/ask-a-lawyer/WhyTaawon";
+import ExpertTeam from "../components/ExpertTeam";
+import Footer from "../components/Footer";
+
 function Form() {
   return (
     <>
@@ -65,6 +68,8 @@ function Form() {
       </section>
       <HowItWorks />
       <WhyTaawon />
+      <ExpertTeam />
+      <Footer />
     </>
   );
 }

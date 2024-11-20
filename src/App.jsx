@@ -1,22 +1,26 @@
 import MainPage from "./pages/MainPage";
 import Navbar from "./components/navbar/Navbar";
-import About from "./pages/About";
+import AboutUs from "./pages/AboutUs";
+import LegalServices from "./pages/LegalServices";
+import Expertise from "./pages/Expertise";
 import AskALawyer from "./components/AskALawyer";
-import Contact from "./pages/Contact";
+import MultiMedia from "./pages/MultiMedia";
+import ContactUs from "./pages/ContactUs";
 import Blog from "./pages/Blog";
 import { Route, Routes } from "react-router-dom";
-
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/legalServices" element={<LegalServices />} />
+        <Route path="/expertise" element={<Expertise />} />
         <Route path="/ask-a-lawyer" element={<AskALawyer />} />
+        <Route path="/multiMedia" element={<MultiMedia />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </>
   );

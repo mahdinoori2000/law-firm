@@ -1,4 +1,4 @@
-import AskALawyerPage from "./ask-a-lawyer/AskALawyerPage";
+import AskALawyerPage from "../pages/AskALawyerPage";
 
 function AskALawyer() {
   return (
