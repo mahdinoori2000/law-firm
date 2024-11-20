@@ -6,7 +6,7 @@ import Expertise from "./pages/Expertise";
 import AskALawyer from "./components/AskALawyer";
 import MultiMedia from "./pages/MultiMedia";
 import ContactUs from "./pages/ContactUs";
-import Blog from "./pages/Blog";
+
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
         <Route path="/ask-a-lawyer" element={<AskALawyer />} />
         <Route path="/multiMedia" element={<MultiMedia />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/blog" element={<Blog />} />
       </Routes>
     </>
   );

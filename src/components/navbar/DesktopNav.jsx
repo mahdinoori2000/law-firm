@@ -1,4 +1,3 @@
-import logo from "../../assets/taawon.png";
 import { NavLink } from "react-router-dom";
 
 // Icons
