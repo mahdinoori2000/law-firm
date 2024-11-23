@@ -1,7 +1,7 @@
 import Headline from '../headline/Headline'
 import Services from '../services/Services';
 import Testimonials from '../components/Testimonials';
-import ExpertTeam from '../components/Expert';
+import ExpertTeam from '../components/ExpertTeam';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
