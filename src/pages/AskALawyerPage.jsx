@@ -6,6 +6,7 @@ import LawyersNearYou from "../components/ask-a-lawyer/LawyersNearYou";
 import WhyTaawon from "../components/ask-a-lawyer/WhyTaawon";
 import ExpertTeam from "../components/ExpertTeam";
 import Footer from "../components/Footer";
+import Testimonials from "../components/Testimonials";
 
 function Form() {
   const form = useRef();
@@ -113,6 +114,7 @@ function Form() {
       <WhyTaawon />
       <ExpertTeam />
       <LawyersNearYou />
+      <Testimonials />
       <Footer />
     </>
   );
