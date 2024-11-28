@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import qouteIcon from "../assets/qoute-icon.png";
 import lawyer from "../assets/lawyer.png";
 import lawyer2 from "../assets/lawyer2.jpg";
 import lawyer3 from "../assets/lawyer3.jpg";
