@@ -2,7 +2,7 @@ import backgroundImage from "../assets/lawyers.png"; // Import the image
 
 const ComingSoon = ({ title }) => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 bg-cover bg-center">
+    <div className="z-55 relative min-h-screen flex flex-col items-center justify-center text-center px-4 bg-cover bg-center">
       {/* Overlay container to add opacity to the background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"

@@ -1,182 +1,233 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
-import PropTypes from "prop-types";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/taawon.png";
 
 // Icons
-import { FaFacebookF } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { TiSocialGooglePlus } from "react-icons/ti";
-import { FaYoutube } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import { AiOutlineHome } from "react-icons/ai";
+import { IoMdInformationCircleOutline } from "react-icons/io";
+import { MdGavel } from "react-icons/md";
+import { FaRegLightbulb } from "react-icons/fa";
+import { FiFilm } from "react-icons/fi";
+import { HiOutlineChatAlt2 } from "react-icons/hi";
+import { MdContactMail } from "react-icons/md";
+import Header from "./Header";
 
 export default function MobileNav() {
+  const location = useLocation();
+
   const [openNav, setOpenNav] = useState(false);
+  const [openMenu, setOpenMenu] = useState("");
+
+  useEffect(() => {
+    if (openNav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [openNav]);
 
   const handleItemClick = () => {
     setOpenNav(false);
   };
 
+  const toggle = (menu) => {
+    setOpenMenu(openMenu === menu ? "" : menu);
+  };
   return (
-    <div className="relative mb-14 bg-white">
-      <div
-        className={`fixed top-0 left-0 z-50 h-[15vh] w-full bg-${
-          openNav ? "custom-primary-blue" : "white"
-        }`}
-      >
-        {!openNav && (
-          <div className="bg-zinc-300 h-[36px] flex justify-center w-full  items-center ">
-            <div className="w-full px-2 flex justify-between items-center md:w-[720px] lg:w-[970px] xl:w-[1170px]  ">
-              <ul className="  text-zinc-600 flex gap-[10px]  px-[14px] ">
+    <>
+      {openNav ? (
+        <div className="px-[24px] pt-28 bg-white h-[100vh] fixed top-0 w-[100%] z-[3000]">
+          <button
+            className="flex justify-end mb-20"
+            type="button"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            <AiOutlineClose
+              style={{ width: "2rem", height: "2rem", color: "black" }}
+            />
+          </button>
+          <ul className="h-[60vh] overflow-y-scroll flex flex-col items-start justify-start gap-1 text-black">
+            <MobileNavItems
+              path="/"
+              name="Home"
+              onClick={handleItemClick}
+              icon={<AiOutlineHome />}
+              className={
+                location.pathname == "/" && "bg-blue-600 px-2 py-3 rounded-lg"
+              }
+            />
+
+            <li className="relative">
+              <button
+                type="button"
+                onClick={() => toggle("about")}
+                className={`font-sans font-semibold py-5 flex items-center gap-4 text-3xl overflow-hidden transition-all duration-300 ease-in-out ${
+                  location.pathname == "/ask-a-lawyer" &&
+                  "bg-blue-600 px-2 py-3 rounded-lg"
+                }`}
+              >
+                <span>
+                  <IoMdInformationCircleOutline />
+                </span>
+                <span>About {openMenu ? "-" : "+"}</span>
+              </button>
+              <ul
+                className={`overflow-hidden transition-all duration-300 ease-in-out space-y-2 mt-2 ${
+                  openMenu === "about" ? "block" : "hidden"
+                } text-2xl mb-2 md:absolute md:mt-0 md:left-0 pl-5 md:top-full md:w-40 md:bg-gray-700 md:text-gray-300 md:shadow-lg md:rounded-md `}
+              >
                 <li>
-                  <SocialIcon icon={<FaFacebookF />} />
+                  <NavLink
+                    to="/mission-statement"
+                    onClick={handleItemClick}
+                    className={`block hover:bg-blue-600 px-4 py-2 ${
+                      location.pathname == "/mission-statement" &&
+                      "bg-blue-600 px-2 py-3 rounded-lg"
+                    }`}
+                  >
+                    Mission Statement
+                  </NavLink>
                 </li>
                 <li>
-                  <SocialIcon icon={<FaXTwitter />} />
+                  <NavLink
+                    to="/our-team"
+                    onClick={handleItemClick}
+                    className={`block hover:bg-blue-600 px-4 py-2 ${
+                      location.pathname == "/our-team" &&
+                      "bg-blue-600 px-2 py-3 rounded-lg"
+                    }`}
+                  >
+                    Our Team
+                  </NavLink>
                 </li>
                 <li>
-                  <SocialIcon
-                    icon={<TiSocialGooglePlus className="scale-[1.35]" />}
-                  />
+                  <NavLink
+                    to="/president-message"
+                    onClick={handleItemClick}
+                    className={`block hover:bg-blue-600 px-4 py-2 ${
+                      location.pathname == "/president-message" &&
+                      "bg-blue-600 px-2 py-3 rounded-lg"
+                    }`}
+                  >
+                    President&apos;s Message
+                  </NavLink>
                 </li>
                 <li>
-                  <SocialIcon icon={<FaYoutube />} />
+                  <NavLink
+                    to="/award-and-certificate"
+                    onClick={handleItemClick}
+                    className={`block hover:bg-blue-600 px-4 py-2 ${
+                      location.pathname == "/award-and-certificate" &&
+                      "bg-blue-600 px-2 py-3 rounded-lg"
+                    }`}
+                  >
+                    Award and Certificate
+                  </NavLink>
                 </li>
                 <li>
-                  <SocialIcon icon={<RiInstagramFill />} />
+                  <NavLink
+                    to="/company-profile"
+                    onClick={handleItemClick}
+                    className={`block hover:bg-blue-600 px-4 py-2 ${
+                      location.pathname == "/company-profile" &&
+                      "bg-blue-600 px-2 py-3 rounded-lg"
+                    }`}
+                  >
+                    Company Profile
+                  </NavLink>
                 </li>
               </ul>
-              <div>
-                <button
-                  type="button"
-                  className="px-[10px] py-1   hover:bg-slate-500 hover:text-white"
-                >
-                  دری
-                </button>
-                <button
-                  type="button"
-                  className="px-[10px]  py-1  hover:bg-slate-500 hover:text-white"
-                >
-                  پشتو
-                </button>
-                <button
-                  type="button"
-                  className="px-[10px]  py-1  hover:bg-slate-500 hover:text-white"
-                >
-                  English
-                </button>
+            </li>
+            <MobileNavItems
+              path="/legalServices"
+              name="Legal Services"
+              onClick={handleItemClick}
+              icon={<MdGavel />}
+              className={
+                location.pathname == "/legalServices" &&
+                "bg-blue-600 px-2 py-3 rounded-lg"
+              }
+            />
+            <MobileNavItems
+              path="/expertise"
+              name="Expertise"
+              onClick={handleItemClick}
+              icon={<FaRegLightbulb />}
+              className={
+                location.pathname == "/expertise" &&
+                "bg-blue-600 px-2 py-3 rounded-lg"
+              }
+            />
+            <MobileNavItems
+              path="/ask-a-lawyer"
+              name="Ask A Lawyer"
+              onClick={handleItemClick}
+              icon={<HiOutlineChatAlt2 />}
+              className={
+                location.pathname == "/ask-a-lawyer" &&
+                "bg-blue-600 px-2 py-3 rounded-lg"
+              }
+            />
+            <MobileNavItems
+              path="/multiMedia"
+              name="MultiMedia"
+              onClick={handleItemClick}
+              icon={<FiFilm />}
+              className={
+                location.pathname == "/multiMedia" &&
+                "bg-blue-600 px-2 py-3 rounded-lg"
+              }
+            />
+            <MobileNavItems
+              path="/contact"
+              name="Contact"
+              onClick={handleItemClick}
+              icon={<MdContactMail />}
+              className={
+                location.pathname == "/contact" &&
+                "bg-blue-600 px-2 py-3 rounded-lg"
+              }
+            />
+          </ul>
+        </div>
+      ) : (
+        <>
+          <Header />
+          {/* fixed top-10 right-4 transition-transform ease-in-out */}
+          <div className="w-full px-10 fixed top-9 transition-transform ease-in-out flex justify-between bg-white">
+            <button
+              type="button"
+              onClick={() => setOpenNav(!openNav)}
+              className="z-555"
+            >
+              <GiHamburgerMenu style={{ width: "2rem", height: "2rem" }} />
+            </button>
+
+            <div className="bg-white duration-500">
+              <div className="w-20">
+                <img src={logo} alt="Logo" />
               </div>
             </div>
           </div>
-        )}
-        <button
-          type="button"
-          onClick={() => setOpenNav(!openNav)}
-          className="fixed left-4 top-14 z-500"
-        >
-          {openNav ? (
-            <AiOutlineClose
-              style={{ width: "2rem", height: "2rem", color: "white" }}
-            />
-          ) : (
-            <GiHamburgerMenu style={{ width: "2rem", height: "2rem" }} />
-          )}
-        </button>
-        {!openNav && (
-          <div className="fixed top-10 right-4 transition-transform ease-in-out bg-white duration-500">
-            <div className="w-20">
-              <img src={logo} alt="Logo" />
-            </div>
-          </div>
-        )}
-      </div>
-
-      <select
-        className={`fixed right-8 top-6 z-${
-          openNav ? "50" : "-1"
-        } h-7 focus:outline-none text-[18px] text-white cursor-pointer bg-custom-primary-blue`}
-        style={{ display: openNav ? "block" : "none" }}
-      >
-        <option value="english" className="text-[14px]">
-          En
-        </option>
-        <option value="Persian" className="text-[14px]">
-          Fa
-        </option>
-        <option value="Pashto" className="text-[14px]">
-          Pa
-        </option>
-      </select>
-
-      <div
-        className={`${
-          openNav ? "translate-x-0" : "-translate-x-full"
-        } fixed top-0 left-0 z-40 w-[100%] h-screen bg-custom-primary-blue text-white transition-transform ease-in-out duration-500`}
-      >
-        <ul className="h-full flex flex-col items-center justify-center gap-5">
-          <MobileNavItems path="/" name="Home" onClick={handleItemClick} />
-          <MobileNavItems
-            path="/about"
-            name="About"
-            onClick={handleItemClick}
-          />
-          <MobileNavItems
-            path="/legalServices"
-            name="Legal Services"
-            onClick={handleItemClick}
-          />
-          <MobileNavItems
-            path="/expertise"
-            name="Expertise"
-            onClick={handleItemClick}
-          />
-          <MobileNavItems
-            path="/ask-a-lawyer"
-            name="Ask A Lawyer"
-            onClick={handleItemClick}
-          />
-          <MobileNavItems
-            path="/multiMedia"
-            name="MultiMedia"
-            onClick={handleItemClick}
-          />
-          <MobileNavItems
-            path="/contact"
-            name="Contact"
-            onClick={handleItemClick}
-          />
-        </ul>
-      </div>
-    </div>
+        </>
+      )}
+    </>
   );
 }
 
-function SocialIcon({ icon, link = "#" }) {
+function MobileNavItems({ path, name, onClick, icon, className }) {
   return (
-    <a className="hover:text-white" href={link}>
-      {icon}
-    </a>
-  );
-}
-
-function MobileNavItems({ path, name, onClick }) {
-  return (
-    <li>
+    <li className="w-full">
       <NavLink
         to={path}
-        className="flex items-center gap-4 text-2xl"
+        className={`flex items-center gap-4 text-3xl py-5 mr-2 ${className}`}
         onClick={onClick}
       >
+        <span>{icon}</span>
         <span>{name}</span>
       </NavLink>
     </li>
   );
 }
-
-MobileNavItems.propTypes = {
-  path: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-};

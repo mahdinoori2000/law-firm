@@ -1,7 +1,11 @@
 import ComingSoon from "../components/ComingSoon";
 
 const MultiMedia = () => {
-  return <ComingSoon title="Multi Media Page" />;
+  return (
+    <div className="mt-32">
+      <ComingSoon title="Multi Media Page" />
+    </div>
+  );
 };
 
 export default MultiMedia;
