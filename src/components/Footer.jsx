@@ -5,8 +5,8 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="pt-24 px-5">
-      <div className="md:pl-16 lg:flex lg:justify-around">
+    <footer className="pt-24 pb-14 px-5 bg-neutral-200">
+      <div className="sm:pl-16 lg:pl-0 lg:flex lg:justify-around">
         <div>
           <Contact
             icon={<FaPhoneAlt size={24} />}

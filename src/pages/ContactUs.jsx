@@ -2,7 +2,7 @@ import ComingSoon from "../components/ComingSoon";
 
 function ContactUs() {
   return (
-    <div>
+    <div className="mt-32">
       <ComingSoon title="Contact Us Page" />
     </div>
   );

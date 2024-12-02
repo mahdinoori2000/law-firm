@@ -2,8 +2,10 @@ import ComingSoon from "../components/ComingSoon";
 
 function LegalServices() {
   return (
-    <ComingSoon title="Legal Services Page"/>
-  )
+    <div className="mt-32">
+      <ComingSoon title="Legal Services Page" />
+    </div>
+  );
 }
 
 export default LegalServices;
